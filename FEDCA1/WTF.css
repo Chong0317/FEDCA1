@@ -1,0 +1,151 @@
+/* Reset & base */
+.image-16-9 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 9/16 = 0.5625 → 56.25% */
+  margin: 1.5rem 0;     /* spacing above/below images */
+  overflow: hidden;
+}
+
+.image-16-9 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crop/scale to fill container */
+}
+
+.image-16-9 figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header & Nav */
+.site-header {
+  background-color: #000;
+  color: #fff;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.site-logo {
+  font-size: 1.5rem;
+}
+.site-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+.site-nav a:hover {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* Article */
+.news-article {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.article-header .headline {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Principles */
+.principles h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.principle-list {
+  list-style: none;
+}
+.principle-list > li {
+  margin-bottom: 1rem;
+}
+.principle-list li strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.principle-list li ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+
+/* Stats */
+.stats {
+  background-color: #eef6ee;
+  padding: 1rem;
+  border-left: 4px solid #4CAF50;
+  margin: 2rem 0;
+}
+
+/* Case Studies */
+.case-studies h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 600px) {
+  .case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.case-study h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
